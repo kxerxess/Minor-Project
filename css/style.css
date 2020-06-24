@@ -53,7 +53,7 @@ body {
   background-color: rgba(256,256,256,0);
 }
 @media only screen and (max-width: 600px) {
-  .mian-text {
+  .main-text {
     font-size: 8em;
   }
 }

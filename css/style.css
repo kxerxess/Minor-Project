@@ -1,215 +1,182 @@
-html {
-  scroll-behavior: smooth;
-  height: 100%;
+:root {
+    --primary-color: #03DAC5;
+    --bg-color: #121212;
+    --secondary-color: purple;
+    --font-color: #f5f5f5;
+
+    --primary: 0, 0%, 100%;
+    --secondary: 202, 73%, 28%;
+    --c: cubic-bezier(1, .49, .16, .96);
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
 body {
-  height: 100%;
-  background-color: #121212;
-  font-family: 'Oswald', sans-serif;
-  color: #f5f5f5;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    height: 100%;
+    margin: 0;
 }
 
-.loading {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
+.splash {
+    background: url(../img/splash-bg-3.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
-.overlay-black {
-  background-color: rgba(0, 0, 0, 0.4);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
+.navigation {
+    padding: 5vh;
 }
 
-
-.top-alert{
-  text-align: center;
-  background: #1F1B24;
-  color: #BB86FC;
+.navbar-nav {
+    padding: 0 5rem 0 2rem;
 }
 
-.main {
-  background-image: url("../res/background-min.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100%;
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: font-size 0.3s;
+    line-height: 1.5rem;
+    background-color: var(--font-color);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
 }
 
-.main-text{
-  display: none;
-  padding: 150px;
-  padding-bottom: 0px;
-  text-align: center;
-  font-size: 4em;
-  background-color: rgba(256,256,256,0);
-}
-@media only screen and (max-width: 600px) {
-  .main-text {
-    font-size: 8em;
-  }
+.active .nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.about-me {
-  text-align: center;
+.nav-link:hover {
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.about-me-text {
-  text-align: center;
-  color: #BB86FC;
+.splash-text {
+    width: 100%;
+    margin-top: 15vh;
+    text-align: center;
+    cursor: default;
 }
 
-#scrolldown {
-  text-align: center;
+.lname {
+    color: var(--primary-color);
 }
 
-.scrolldown-main {
-  display: none;
+.splash-text .fname span,
+.splash-text .lname span {
+    /* display: none; */
+    font-weight: 500;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+    padding-right: 2.5vw;
+    transition: all 0.2s;
 }
 
-#scrolldown a img{
-  /* display: none; */
-  background-color: rgba(21,21,21,0.7);
-  border-radius: 50%;
+.splash-text .fname span:hover {
+    color: var(--primary-color);
 }
 
-#scrolldown a img:hover {
-  box-shadow: 0 2px 5px 0 rgba(256,256,256,.16), 0 2px 10px 0 rgba(256,256,256,.12);
-  transition: all 0.2s ease-in-out;
-
+.splash-text .lname span:hover {
+    color: var(--font-color);
 }
 
-.card {
-  width: 25%;
-  min-width: 18em;
-  display: inline-block;
-  text-align: center;
-  color: #f5f5f5;
-  background-color: #1F1B24;
-  margin: 30px;
-  margin-top: 50px;
+.cta {
+    width: 100%;
+    padding-top: 2rem;
 }
 
-.card:hover {
-  box-shadow: 0px 2px 5px 0px rgba(256,256,256,.16), 0px 2px 10px 0 rgba(256,256,256,.12);
-  transition: all 0.1s ease-in-out;
-  color: #f5f5f5;
-  text-decoration: none;
+.cta .col-md-3 {
+    padding: 1rem;
 }
 
-.card-img-top {
-  margin: 20px;
-  margin-bottom: 0px;
-  width:30%;
+.cta-button {
+    position: relative;
+    width: 12rem;
+    height: 3rem;
+    display: flex;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: var(--font-color) 0.3;
+    border-radius: 1.625rem;
+    margin: auto;
 }
 
-.card-title {
-  color: #BB86FC;
+.cta-button:focus {
+    outline: none;
 }
 
-#abt-me-cards {
-  text-decoration: none;
-  color: #f5f5f5;
+.cta-button .circle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--font-color);
+    border-radius: 1.625rem;
+    transition: all 0.3s;
 }
 
-#section3 {
-  margin-top: 50px;
-  position: static;
-  background-image: url("../res/stars-back.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+.cta-button .icon {
+    position: absolute;
+    top: 0.5rem;
+    bottom: 0;
+    left: 0;
+    right: 9rem;
+    color: black;
 }
 
-.quote{
-  padding: 30px;
-  text-align: center;
-  font-size: 2em;
+.cta-button .button-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 1rem 0 4rem;
+    color: var(--font-color);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    transition: all 0.5s;
 }
 
-.education {
-  text-align: center;
+.cta-button:hover .circle{
+    width: 100%;
+    background: black;
 }
 
-.edu-card {
-  border: 2px solid #BB86FC;
-  margin: 20px;
-  background-color: #1F1B24;
-  padding: 50px;
-  text-align: center;
+.cta-button:hover .button-text{
+    color: var(--font-color);
 }
 
-.edu-card .hidden {
-  display: none;
+.cta-button:hover .git-icon{
+    color: white;
 }
 
-.progress {
-  margin: 25px;
-  background-color: #1F1B24;
-}
-
-.progress-bar {
-  background-color: #BB86FC;
-}
-
-.exp-card {
-  padding:20px;
-  border-left: 2px solid #BB86FC;
-}
-
-#section6 {
-  text-align: center;
-  background-image: url("../res/sports-back.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.volleyball, .football {
-  text-align: center;
-}
-
-.tournament {
-  border: 2px solid #BB86FC;
-  padding: 20px;
-  background: #1F1B24;
-}
-
-#section7 {
-  text-align: center;
-}
-
-#coder-img {
-  width: 50%;
-}
-
-.coder {
-  display: inline-block;
-}
-
-.instagram,.linkedin,.github {
-  padding: 30px;
-}
-
-.l-title {
-  color: #BB86FC;
-}
-
-.l-link {
-  text-decoration: none;
-  color: #f5f5f5;
-}
-
-.l-link:hover {
-  color: #BB86FC;
+.cta-button:hover .li-icon{
+    color: #4fc3f7;
 }

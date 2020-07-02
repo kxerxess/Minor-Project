@@ -1,390 +1,137 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Kaustubh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/inviewport.jquery.js" charset="utf-8"></script>
-  <script src="js/jquery.waypoints.min.js" charset="utf-8"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaustubh Sharma</title>
 
-  <!-- Css here -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- FontAwesome here -->
+    <script src="https://use.fontawesome.com/391680cc4a.js"></script>
+
+    <!-- JS here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <!-- Fonts here -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 
 
 </head>
 
 <body>
 
-  <div class="loading">
-  </div>
-  <div class="main" id="section1">
-    <div class="overlay-black">
-      <div class="container">
-        <div class="row smooth-scroll">
-          <div class="col-xl-12 main-text">
-            <p><span style="color:#BB86FC;">Hey</span> I'm</p>
-            <p><strong>KAUSTUB <span style="color:#BB86FC;">SHARMA</span></strong></p>
-          </div>
-        </div>
-        <div class="scrolldown-main" id="scrolldown">
-          <a href="#section2">
-            <img id="scrolldown-img" src="res/icons/down.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="about-me container" id="section2">
-    <br><br>
-    <img src="res/icons/star.png" alt="">
-    <div class="about-me-text">
-      <h1>ABOUT <strong>ME</strong></h1>
-    </div>
-    <div class="">
-
-    </div>
-
-    <a href="#section4" id="abt-me-cards">
-      <div class="card">
-        <img class="card-img-top" src="res/icons/student.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Student</h5>
-          <p class="card-text">3rd year Engineering (Electronics and Telecommunications) student situated in Mumbai.</p>
-        </div>
-      </div>
-    </a>
-
-    <a href="#section5" id="abt-me-cards">
-      <div class="card">
-        <img class="card-img-top" src="res/icons/code.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Developer</h5>
-          <p class="card-text">Machine Learning Developer with knowledge of Web and App Development.</p>
-        </div>
-      </div>
-    </a>
-
-    <a href="#section6" id="abt-me-cards">
-      <div class="card">
-        <img class="card-img-top" src="res/icons/sports.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Athlete</h5>
-          <p class="card-text">National Level football and volleyball player. Excelling in other games such as swimming,
-            table-tennis also.</p>
-        </div>
-      </div>
-    </a>
-
-    <br>
-    <br>
-
-    <div id="scrolldown">
-      <a href="#section3">
-        <img id="scrolldown-img" src="res/icons/down.png" alt="">
-      </a>
-    </div>
-  </div>
 
 
-  <div id="section3">
-    <div class="overlay-black">
-      <div class="quote container">
-        <img src="res/icons/star.png" alt="" style="margin-bottom:70px;">
-        <p>"Intelligence is the ability to adapt to change."</p>
-        <p>- Stephen Hawking</p>
-      </div>
-      <br><br>
-      <div id="scrolldown">
-        <a href="#section4">
-          <img src="res/icons/down.png" alt="">
-        </a>
-      </div>
-      <br><br>
-    </div>
-  </div>
+    <div class="splash">
 
-  <div class="education" id="section4">
-    <br><br>
-    <img src="res/icons/star.png" alt="">
-    <div class="my-edu-text">
-      <h1>MY <strong style="color: #BB86FC;">EDUCATION</strong></h1>
-    </div>
-    <br><br>
-    <div class="container">
-      <div class="edu-card ryan">
-        <h2>Ryan International School, ICSE</h2>
-        <br>
-        <p>
-          <h4>I have completed my Higher Secondary Education from <a href="https://www.ryaninternational.org/"
-              target="_blank" style="color: #BB86FC">Ryan International School, Kharghar</a> located in Navi Mumbai.
-          </h4>
-        </p>
-        <div class="hidden">
-          <br><br>
-          <p>Passing Year : 2015</p>
-          <p>Percentage : 90%</p>
-          <p>Specailization: Computer Science</p>
-        </div>
-      </div>
-      <div class="edu-card apj">
-        <h2>Apeejay School, CBSE</h2>
-        <br>
-        <p>
-          <h4>I have completed my Senior Secondary Education from <a href="https://www.apeejay.edu/kharghar/"
-              target="_blank" style="color: #BB86FC">Apeejay School, Kharghar</a> located in Navi Mumbai.</h4>
-        </p>
-        <div class="hidden">
-          <br>
-          <p>Passing Year : 2017</p>
-          <p>Percentage : 82%</p>
-          <p>Specailization: Computer Science</p>
-        </div>
-      </div>
-      <div class="edu-card rait">
-        <h2>Ramrao Adik Institute of Technology</h2>
-        <br>
-        <p>
-          <h4>I am pursuing Bachelors in Engineering from <a href="http://www.dypatil.edu/mumbai/rait/" target="_blank"
-              style="color: #BB86FC">Ramrao Adik Institute of Technology (RAIT), Navi Mumbai.</a></h4>
-        </p>
-        <div class="hidden">
-          <br><br>
-          <p>Passing Year : On-going</p>
-          <p>Percentage : --</p>
-          <p>Specailization: Electronics and Telecommunications</p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div id="scrolldown">
-      <a href="#section5">
-        <img src="res/icons/down.png" alt="">
-      </a>
-    </div>
-  </div>
-  <br><br><br>
-  <div class="technical" id="section5">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-6 tech-lhs">
-          <br><br>
-          <img style="margin-left:42%" src="res/icons/star.png" alt="">
-          <h1 style="text-align:center">WORK <span style="color:#BB86FC">EXPERIENCE</span> </h1>
-          <br><br>
-          <div class="exp-card">
-            <h3>Machine Learning Intern</h3>
-            <h4>Eduvance, IBM</h4>
-            <ul>
-              <li>2019</li>
-              <li>Data analysis with Python</li>
-              <li>Multiple Machine Learning models for Regression and Classification</li>
-              <li>Deplyment on IBM Watson</li>
-            </ul>
-          </div>
-          <br>
-          <br>
-          <div class="exp-card">
-            <h3>Android Developer</h3>
-            <br>
-            <ul>
-              <li>2019</li>
-              <li>Trail Tracker App</li>
-              <li>Attendance Manager App</li>
-              <li>Workout Timer App</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-6 tech-rhs">
-          <br><br>
-          <img style="margin-left:42%" src="res/icons/star.png" alt="">
-          <h1 style="text-align:center">TECHNICAL <span style="color:#BB86FC">SKILLS</span></h1>
-          <br>
-          <h3>Python:</h3>
-          <div class="progress py">
-            <div class="progress-bar" style="width:0%" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-          <h3>Java:</h3>
-          <div class="progress jav">
-            <div class="progress-bar" style="width:0%" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-          <h3>C/C++:</h3>
-          <div class="progress cc">
-            <div class="progress-bar" style="width:0%" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-          <h3>Web Development:</h3>
-          <div class="progress wd">
-            <div class="progress-bar" style="width:0%" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-          <h3>Machine Learning:</h3>
-          <div class="progress ml">
-            <div class="progress-bar" style="width:0%" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
-      <br><br>
-    </div>
-    <div id="scrolldown">
-      <a href="#section6">
-        <img id="scrolldown-img" src="res/icons/down.png" alt="">
-      </a>
-    </div>
-    <br><br><br>
-  </div>
 
-  <div class="athlete" id="section6">
-    <div class="overlay-black">
-      <br><br>
-      <img src="res/icons/star.png" alt="">
-      <div class="sports-text">
-        <h1 style="color:#BB86FC"><strong>SPORTS</strong></h1>
-      </div>
-      <br><br>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 volleyball">
-            <img src="./res/icons/volley.png" alt="">
-            <h1>VOLLEYBALL</h1>
-            <span>Captain of the college volleyball team.</span>
-            <br><br><br>
-            <h2>Tournaments:</h2>
-            <div class="tournament">
-              <div class="t-title">
+        <header class="navigation">
+            <nav class="navbar navbar-expand-md navbar-dark" id="nav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            </navigation>
+
+            <div class="splash-text">
+                <div class="fname">
+                    <span>K</span>
+                    <span>A</span>
+                    <span>U</span>
+                    <span>S</span>
+                    <span>T</span>
+                    <span>U</span>
+                    <span>B</span>
+                    <span>H</span>
+                </div>
                 <br>
-                <h3><span style="color:#BB86FC">ZEEL</span> 2020</h3>
-              </div>
-              <div class="t-desc">
-                <br>
-                <p>National Level Volleyball Tournament organized by College of Enginering, Pune.</p>
-              </div>
-              <div class="t-res">
-                <br>
-                Winners
-              </div>
+                <div class="lname">
+                    <span>S</span>
+                    <span>H</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>M</span>
+                    <span>A</span>
+                </div>
             </div>
-            <div class="tournament">
-              <div class="t-title">
-                <br>
-                <h3><span style="color:#BB86FC">SUMMIT</span> 2019</h3>
-              </div>
-              <div class="t-desc">
-                <br>
-                <p>National Level Volleyball Tournament organized by MIT-WPU, Pune.</p>
-              </div>
-              <div class="t-res">
-                <br>
-                Runners-up
-              </div>
+            <div class="cta row">
+                <div class="col-md-3 offset-md-3">
+                    <a href="https://github.com/kxerxess" target="_blank">
+                        <button class="cta-button">
+                            <span class="circle" aria-hidden="true"></span>
+                            <i class="fa fa-2x fa-github icon git-icon" aria-hidden="true"></i>
+                            <span class="button-text">GitHub</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.linkedin.com/in/kaustubh-s/" target="_blank">
+                        <button class="cta-button">
+                            <span class="circle" aria-hidden="true"></span>
+                            <i class="fa fa-2x fa-linkedin icon li-icon" aria-hidden="true"></i>
+                            <span class="button-text">LinkedIn</span>
+                        </button>
+                    </a>
+                </div>
             </div>
-            <div class="tournament">
-              <div class="t-title">
-                <br>
-                <h3><span style="color:#BB86FC">AAVHAN</span> 2019</h3>
-              </div>
-              <div class="t-desc">
-                <br>
-                <p>National Level Volleyball Tournament organized by IIT, Bombay.</p>
-              </div>
-              <div class="t-res">
-                <br>
-                2nd Runners-up
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 football">
-            <img src="./res/icons/football.png" alt="">
-            <h1>FOOTBALL</h1>
-            <span></span>
-            <br><br><br>
-            <h2>Tournaments:</h2>
-            <div class="tournament">
-              <div class="t-title">
-                <br>
-                <h3><span style="color:#BB86FC">ZEEL</span> 2020</h3>
-              </div>
-              <div class="t-desc">
-                <br>
-                <p>National Level Football Tournament organized by College of Enginering, Pune.</p>
-              </div>
-              <div class="t-res">
-                <br>
-                Runners-up
-              </div>
-            </div>
-            <div class="tournament">
-              <div class="t-title">
-                <br>
-                <h3><span style="color:#BB86FC">SUMMIT</span> 2020</h3>
-              </div>
-              <br>
-              <div class="t-desc">
-                <p>National Level Football Tournament organized by MIT-WPU, Pune.</p>
-              </div>
-              <br>
-              <br>
-              <div class="t-res">
-                2nd Runners-up
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br><br>
-      <div id="scrolldown">
-        <a href="#section7">
-          <img src="res/icons/down.png" alt="">
-        </a>
-      </div>
-      <br><br><br>
     </div>
-  </div>
-
-  <div class="contact" id="section7">
-    <br>
-    <img src="res/icons/star.png" alt="">
-    <div class="contact-text">
-      <h1>CONTACT THE <span style="color:#BB86FC"><strong>DEVELOPER</strong></span></h1>
-      <p>E-mail : sharma.kaustubh99@gmail.com</p>
     </div>
-    <br>
-    <div class="container">
-      <div class="row links">
-        <div class="col-md-4 instagram">
-          <img src="./res/icons/instagram.png" style="height:100px;margin:20px;" alt="">
-          <h2 class='l-title'>Instagram</h2>
-          <a class="l-link" href="https://www.instagram.com/kaustubhsharma_/" target="_blank">@kaustubhsharma_</a>
-        </div>
-        <br>
-        <div class="col-md-4 linkedin">
-          <img src="./res/icons/linkedin.png" style="height:100px;margin:20px;" alt="">
-          <h2 class='l-title'>Linkedin</h2>
-          <a class="l-link" href="https://www.linkedin.com/in/kaustubh-s/" target="_blank">Kaustubh Sharma</a>
-        </div>
-        <div class="col-md-4 github">
-          <img src="./res/icons/github.png" style="height:100px;margin:20px;" alt="">
-          <h2 class='l-title'>GitHub</h2>
-          <a class="l-link" href="https://github.com/kxerxess" target="_blank">kxerxes</a>
-        </div>
-      </div>
-      <div class="container">
-        <div class="coder">
-          <img id="coder-img" src="./res/icons/coder.png" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
 
 
-  <script src="js/style.js" charset="utf-8"></script>
 
+    <!-- JS here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/style.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
 
 </body>
 
